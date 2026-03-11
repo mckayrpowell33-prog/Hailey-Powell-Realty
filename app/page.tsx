@@ -1,11 +1,9 @@
 import { Metadata } from 'next';
-import AreaCard from '@/components/AreaCard';
 import CTASection from '@/components/CTASection';
 import HeroSection from '@/components/HeroSection';
 import ListingCard from '@/components/ListingCard';
 import SectionTitle from '@/components/SectionTitle';
 import TestimonialCard from '@/components/TestimonialCard';
-import { areas } from '@/data/areas';
 import { listings } from '@/data/listings';
 import { testimonials } from '@/data/testimonials';
 
@@ -24,7 +22,7 @@ export default function HomePage() {
         <SectionTitle
           eyebrow="Welcome"
           title="A grounded Boise real estate experience"
-          description="At Hailey Powell Realty, clients get sincere communication, practical guidance, and neighborhood-level insight across Boise and surrounding communities."
+          description="At Hailey Powell Realty, clients get sincere communication, practical guidance, and neighborhood-level insight across Boise, Meridian, Eagle, Kuna, and Star."
         />
       </section>
       <section className="mx-auto max-w-7xl px-4 pb-20 lg:px-8">
@@ -43,14 +41,6 @@ export default function HomePage() {
               <TestimonialCard key={testimonial.id} testimonial={testimonial} />
             ))}
           </div>
-        </div>
-      </section>
-      <section className="mx-auto max-w-7xl px-4 py-20 lg:px-8">
-        <SectionTitle eyebrow="Boise Areas" title="Explore communities across the Treasure Valley" />
-        <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-          {areas.map((area) => (
-            <AreaCard key={area.slug} area={area} />
-          ))}
         </div>
       </section>
       <CTASection />

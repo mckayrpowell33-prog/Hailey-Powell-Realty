@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import LogoBlock from './LogoBlock';
 
 export default function HeroSection() {
   return (
@@ -10,6 +11,9 @@ export default function HeroSection() {
       />
       <div className="mx-auto grid max-w-7xl gap-10 px-4 py-24 lg:grid-cols-2 lg:px-8">
         <div>
+          <div className="mb-6 rounded-xl border border-brand-taupe/25 bg-white/80 p-3 backdrop-blur-sm sm:inline-flex">
+            <LogoBlock compact />
+          </div>
           <p className="mb-4 text-sm font-semibold uppercase tracking-[0.2em] text-brand-taupe">Boise Real Estate, Done Sincerely</p>
           <h1 className="font-serif text-5xl leading-tight text-brand-pine">Find Your Place in Boise and Beyond</h1>
           <p className="mt-6 max-w-xl text-lg text-slate-700">
