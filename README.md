@@ -1,62 +1,79 @@
 # Hailey Powell Realty Website
 
-Custom production-style Next.js website for a Boise-area real estate brand, designed around the Hailey Powell Realty logo palette (forest green + taupe neutrals) with reusable components and scalable content structure.
+A production-style Next.js real estate website tailored to Hailey Powell Realty with a Boise-first brand voice, reusable components, and a logo-driven design system.
 
-## Tech Stack
+## Stack
 
 - Next.js 14 (App Router)
-- React 18
-- TypeScript
+- React 18 + TypeScript
 - Tailwind CSS
 
-## Brand Asset Notes
+## Brand System Notes
 
-Logo and skyline placeholders are included in `/public` for local development:
+The visual palette is mapped directly from the Hailey Powell Realty logo:
 
-- `/public/logo-primary.svg`
-- `/public/logo-light.svg`
-- `/public/logo-mark.svg`
-- `/public/boise-skyline.svg`
+- Forest green (`brand.forest`) as the primary accent
+- Deeper pine (`brand.pine`) for headings and contrast
+- Muted taupe (`brand.taupe`) for supporting accents
+- Soft off-white (`brand.mist`) for section backgrounds
 
-> Replace these with the real brand assets when available. Keep filenames the same for zero-code swap, or update component references.
+These values live in `tailwind.config.ts` and can be adjusted in one place.
 
-## Run Locally
+## Logo + Asset Placeholders
+
+Current placeholders are in `/public`:
+
+- `logo-primary.svg`
+- `logo-light.svg`
+- `logo-mark.svg`
+- `boise-skyline.svg`
+
+> Replace these with your final exported files and keep filenames the same for a zero-code swap.
+
+## Local Development
 
 ```bash
 npm install
 npm run dev
 ```
 
-Then open `http://localhost:3000`.
+Open `http://localhost:3000`.
 
-## Build for Production
+## Production Commands
 
 ```bash
 npm run build
 npm run start
+npm run lint
 ```
 
 ## Project Structure
 
 ```txt
 /app
+  /page.tsx
+  /search-homes/page.tsx
+  /featured-listings/page.tsx
+  /boise-areas/page.tsx
+  /boise-areas/boise/page.tsx
+  /boise-areas/meridian/page.tsx
+  /boise-areas/eagle/page.tsx
+  /boise-areas/kuna/page.tsx
+  /boise-areas/star/page.tsx
+  /about/page.tsx
+  /reviews/page.tsx
+  /contact/page.tsx
+  /layout.tsx
+  /globals.css
 /components
 /data
 /public
 /utils
 ```
 
-## Integration Placeholders Included
+## Integration Placeholder Locations
 
-- IDX integration TODO in `components/SearchFilters.tsx`
-- Google Reviews embed TODO in `app/reviews/page.tsx`
-- Instagram URL replacement comments in footer + contact page
-- Logo replacement comments in `components/LogoBlock.tsx`
-
-## Customization Guide
-
-- Update brand colors in `tailwind.config.ts` under `theme.extend.colors.brand`
-- Swap typography in `app/layout.tsx`
-- Edit listing data in `data/listings.ts`
-- Edit testimonials in `data/testimonials.ts`
-- Edit area content in `data/areas.ts`
+- IDX integration TODO: `components/SearchFilters.tsx`
+- Google Reviews embed TODO: `app/reviews/page.tsx`
+- Instagram link replacement comments: `app/contact/page.tsx`, `components/Footer.tsx`
+- Real logo asset replacement comment: `components/LogoBlock.tsx`

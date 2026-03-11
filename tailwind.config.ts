@@ -6,9 +6,10 @@ const config: Config = {
     extend: {
       colors: {
         brand: {
-          forest: '#274D3A',
-          pine: '#1E3A2E',
-          taupe: '#7A746B',
+          // Core palette sampled from Hailey Powell Realty logo artwork.
+          forest: '#284E3B',
+          pine: '#214132',
+          taupe: '#7D776F',
           mist: '#F6F4F1',
           slate: '#223344'
         }

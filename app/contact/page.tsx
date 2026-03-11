@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import ContactForm from '@/components/ContactForm';
+import LogoBlock from '@/components/LogoBlock';
 import SectionTitle from '@/components/SectionTitle';
 
 export const metadata: Metadata = {
@@ -18,6 +19,7 @@ export default function ContactPage() {
       <div className="mt-10 grid gap-8 lg:grid-cols-2">
         <ContactForm />
         <aside className="space-y-6 rounded-2xl border border-brand-taupe/20 bg-brand-mist p-6">
+          <LogoBlock compact />
           <div>
             <h3 className="font-serif text-2xl text-brand-pine">Contact Information</h3>
             <p className="mt-4 text-slate-700">Phone: (208) 433-1319</p>
