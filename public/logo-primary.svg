@@ -1,0 +1,9 @@
+<svg width="420" height="120" viewBox="0 0 420 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M62 64L130 22L198 64" stroke="#274D3A" stroke-width="10" stroke-linecap="round"/>
+  <path d="M84 64V88M176 64V88" stroke="#274D3A" stroke-width="8"/>
+  <text x="130" y="78" text-anchor="middle" font-size="24" fill="#274D3A" font-family="serif">HP</text>
+  <path d="M30 94C80 72 150 72 220 94" stroke="#274D3A" stroke-width="8" fill="none"/>
+  <path d="M150 92C195 80 245 80 300 94" stroke="#7A746B" stroke-width="6" fill="none"/>
+  <text x="228" y="68" font-size="42" fill="#274D3A" font-family="Georgia">Hailey Powell</text>
+  <text x="230" y="98" font-size="18" fill="#7A746B" font-family="Arial" letter-spacing="5">REALTY</text>
+</svg>
