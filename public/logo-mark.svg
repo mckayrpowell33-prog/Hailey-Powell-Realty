@@ -1,0 +1,6 @@
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="128" height="128" rx="24" fill="#F6F4F1"/>
+  <path d="M24 70L64 40L104 70" stroke="#274D3A" stroke-width="8" stroke-linecap="round"/>
+  <path d="M40 70V90M88 70V90" stroke="#274D3A" stroke-width="6"/>
+  <text x="64" y="76" text-anchor="middle" font-size="20" fill="#274D3A" font-family="serif">HP</text>
+</svg>
